@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Starter template for small or static websites." />
+		<!--index  keywords-->
+		<link rel="icon" type="image/png" href="/assets/favicon.png" />
+		<title>2023 Ücretsiz Birim fiyat ara | ÇŞB | MSB | PTT | Karayolları</title>
+	</head>
+	<body class="h-full w-full">
+		<!--========HEADER NAV========-->
+		<nav class="h-12 w-full bg-black text-center text-white">Nav</nav>
+		<!--========MAIN========-->
+		<main class="flex h-full min-h-screen w-full flex-col lg:flex-row">
+			<!--========LEFT========-->
+			<section
+				class="flex h-full min-h-screen w-full flex-col items-center justify-center lg:w-1/2"
+			>
+				<div class="text-xl font-bold">Poz Ara</div>
+				<div
+					class="mb-3 flex w-full flex-row flex-wrap items-center justify-evenly lg:flex-nowrap"
+				>
+					<label for="ptt" class="flex flex-row items-center justify-start">
+						<input type="radio" name="kurum" value="ptt" /> PTT Pozları
+					</label>
+					<label for="csb" class="flex flex-row items-center justify-start">
+						<input type="radio" name="kurum" value="csb" checked /> ÇSB Pozları
+					</label>
+					<label for="karayollari" class="flex flex-row items-center justify-start">
+						<input type="radio" name="kurum" value="karayollari" /> Karayolları Pozları
+					</label>
+					<label for="iller" class="flex flex-row items-center justify-start">
+						<input type="radio" name="kurum" value="iller" /> iller bankası Pozları
+					</label>
+				</div>
+				<input
+					type="text"
+					id="searchInput"
+					placeholder="2023 Poz ara, C 25, yağmur suyu borusu..."
+					class="w-1/2 rounded-lg border-none bg-slate-200 outline-none"
+				/>
+				<button
+					class="mt-2 hidden rounded-lg bg-slate-500 px-7 py-2 text-white transition hover:opacity-80 active:scale-95"
+				>
+					Ara
+				</button>
+				<div id="sonucDiv">Sonuçlar: 0</div>
+				<div id="pozTableParent" class="max-h-96 w-4/5 overflow-y-auto"></div>
+			</section>
+			<!--========RIGHT========-->
+			<section
+				class="flex h-full min-h-screen w-full flex-col items-center justify-center bg-slate-500 lg:w-1/2"
+			>
+				<div class="text-2xl font-black text-white">
+					<caption>
+						Birim Fiyat Tablosu
+					</caption>
+				</div>
+				<table class="w-3/4">
+					<tr>
+						<th>Company</th>
+						<th>Contact</th>
+						<th>Country</th>
+					</tr>
+					<tr>
+						<td>Alfreds Futterkiste</td>
+						<td>Maria Anders</td>
+						<td>Germany</td>
+					</tr>
+					<tr>
+						<td>Centro comercial Moctezuma</td>
+						<td>Francisco Chang</td>
+						<td>Mexico</td>
+					</tr>
+					<tr>
+						<td>Ernst Handel</td>
+						<td>Roland Mendel</td>
+						<td>Austria</td>
+					</tr>
+					<tr>
+						<td>Island Trading</td>
+						<td>Helen Bennett</td>
+						<td>UK</td>
+					</tr>
+					<tr>
+						<td>Laughing Bacchus Winecellars</td>
+						<td>Yoshi Tannamuri</td>
+						<td>Canada</td>
+					</tr>
+					<tr>
+						<td>Magazzini Alimentari Riuniti</td>
+						<td>Giovanni Rovelli</td>
+						<td>Italy</td>
+					</tr>
+				</table>
+
+				<button
+					class="mt-2 rounded-lg bg-orange-500 px-7 py-2 text-white shadow-lg transition hover:opacity-80 active:scale-95"
+				>
+					Excel - İndir
+				</button>
+			</section>
+		</main>
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>

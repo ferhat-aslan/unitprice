@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		@apply scroll-smooth;
+	}
+
+	body {
+		@apply font-ubuntu text-neutral-800 antialiased;
+	}
+	label input {
+		margin-right: 5px;
+	}
+	table {
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 100%;
+	}
+
+	td,
+	th {
+		border: 1px solid #dddddd;
+		text-align: left;
+		padding: 8px;
+	}
+
+	tr:nth-child(even) {
+		background-color: #dddddd;
+	}
+	.row {
+		display: flex;
+		width: 100%;
+		border-top: 1px solid #e0e0e0;
+	}
+	.row-item {
+		display: flex;
+		width: 100%;
+		border: 1px solid #e0e0e0;
+	}
+}
