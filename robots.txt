@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://birimfiyat.vercel.app/sitemap.xml
